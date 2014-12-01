@@ -1,0 +1,29 @@
+      _   _   _   _   _   _
+     / \ / \ / \ / \ / \ / \
+    ( I | R | C | B | O | T )
+     \_/ \_/ \_/ \_/ \_/ \_/
+
+IRCbot is program for find defined keys in IRC channel and
+send msgs with these keys to SYSLOG server.
+
+Compile:
+    $ make
+
+Run:
+    $ ./ircbot <host>[:<port>] <channel> <syslog_server> [list]
+
+<host> IRC server hostname
+[<[port>] IRC server port (optional)
+<channel> IRC channel to join conversation
+<syslog_server> SYSLOG server to send logs
+[list] list of keys
+
+Example:
+    $ ./ircbot irc.freenode.net] #ISA2014 192.168.1.12 "ISA,test,IRC"
+
+List of files:
+    Makefile
+    main.cpp
+    main.h
+    manual.pdf
+    README
